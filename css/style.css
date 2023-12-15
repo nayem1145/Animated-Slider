@@ -197,10 +197,10 @@ a {
 }
 
 .mt_hero_slider .number_1 .mt_hero_images {
-    transform: rotate(0deg);
+    transform: rotate(2deg);
 }
 .mt_hero_slider .number_1 .mt_hero_images img {
-    transform: rotate(0deg);
+    transform: rotate(-2deg);
 }
 
 .mt_hero_slider .number_2 .mt_hero_images {
@@ -238,8 +238,8 @@ a {
 }
 
 .mt_hero_slider .number_2 .mt_hero_right .leaf-2 {
-    left: 10px;
-    bottom: 340px;
+    left: -30px;
+    bottom: 460px;
     transform: rotate(45deg);
 }
 
@@ -248,16 +248,20 @@ a {
 }
 
 .mt_hero_slider .number_1 .mt_hero_right .leaf-3 {
-    left: -40px;
-    bottom: 0;
+    left: -50px;
+    bottom: -30px;
     transform: rotate(0deg);
 }
 
 .mt_hero_slider .number_2 .mt_hero_right .leaf-3 {
     position: absolute;
-    left: -48px;
-    bottom: 240px;
+    left: -60px;
+    bottom: 370px;
     transform: rotate(56deg);
+}
+
+.mt_hero_slider .mt_hero_slide_single {
+    min-height: 1358px;
 }
 
 
@@ -265,10 +269,10 @@ a {
 
 /****** slider background animation ********/
 .mt_hero_slider .slick-active .number_1 {
-    animation: 0.5s background_animation_1 linear;
+    animation: 2s background_animation_1 linear;
 }
 .mt_hero_slider .slick-active .number_2 {
-    animation: 0.5s background_animation_2 linear;
+    animation: 2s background_animation_2 linear;
 }
 
 /****** slider text badge animation ******/
@@ -282,17 +286,17 @@ a {
 
 /******** slider mask image animation ********/
 .mt_hero_slider .slick-active .number_1 .mt_hero_images {
-    animation: 0.5s mask_animation_1 linear;
+    animation: 2s mask_animation_1 linear;
 }
 .mt_hero_slider .slick-active .number_2 .mt_hero_images {
-    animation: 0.5s mask_animation_2 linear;
+    animation: 2s mask_animation_2 linear;
 }
 
 .mt_hero_slider .slick-active .number_1 .mt_hero_images img {
-    animation: 0.5s mask_animation_reverse_1 linear;
+    animation: 2s mask_animation_reverse_1 linear;
 }
 .mt_hero_slider .slick-active .number_2 .mt_hero_images img {
-    animation: 0.5s mask_animation_reverse_2 linear;
+    animation: 2s mask_animation_reverse_2 linear;
 }
 
 /**************** slider leaf animation ********************/
@@ -312,11 +316,14 @@ a {
 }
 
 .mt_hero_slider .slick-active .number_1 .mt_hero_right .leaf-3 {
-    animation: 0.6s leaf_position_6 linear;
+    animation: 2s leaf_position_6 linear;
 }
 .mt_hero_slider .slick-active .number_2 .mt_hero_right .leaf-3 {
     animation: 0.6s leaf_position_5 linear;
 }
+
+
+
 
 @keyframes leaf_position_5 {
     0% {
@@ -325,20 +332,31 @@ a {
         transform: rotate(0deg);
     }
     100% {
-        left: -48px;
-        bottom: 240px;
+        left: -60px;
+        bottom: 370px;
         transform: rotate(56deg);
     }
 }
+
 @keyframes leaf_position_6 {
     0% {
         left: -48px;
         bottom: 240px;
         transform: rotate(56deg);
     }
-    100% {
+    20% {
         left: -40px;
         bottom: 0;
+        transform: rotate(0deg);
+    }
+    75% {
+        left: -40px;
+        bottom: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: -50px;
+        bottom: -30px;
         transform: rotate(0deg);
     }
 }
@@ -363,8 +381,8 @@ a {
         transform: rotate(0);
     }
     100% {
-        left: 10px;
-        bottom: 340px;
+        left: -30px;
+    bottom: 460px;
         transform: rotate(45deg);
     }
 }
@@ -401,8 +419,14 @@ a {
     0% {
         transform: rotate(-20deg);
     }
+    30% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(2deg);
     }
 }
 
@@ -410,14 +434,26 @@ a {
     0% {
         transform: rotate(20deg);
     }
+    30% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(-2deg);
     }
 }
 
 @keyframes mask_animation_2 {
     0% {
         transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(-18deg);
+    }
+    90% {
+        transform: rotate(-18deg);
     }
     100% {
         transform: rotate(-20deg);
@@ -427,6 +463,12 @@ a {
 @keyframes mask_animation_reverse_2 {
     0% {
         transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(18deg);
+    }
+    90% {
+        transform: rotate(18deg);
     }
     100% {
         transform: rotate(20deg);
@@ -439,12 +481,18 @@ a {
     0% {
         background-size: calc(100% + 150px) 730px;
     }
+    75% {
+        background-size: calc(100% + 150px) 730px;
+    }
     100% {
         background-size: calc(100% + 20px) 730px;
     }
 }
 @keyframes background_animation_2 {
     0% {
+        background-size: calc(100% + 20px) 730px;
+    }
+    75% {
         background-size: calc(100% + 20px) 730px;
     }
     100% {
@@ -492,9 +540,15 @@ a {
     .mt_hero_images {
         width: calc(100% + 250px);
     }
+    .mt_hero_slider .slick-dots {
+        display: none;
+    }
 }
 
 @media (max-width: 1450px) {
+    .mt_hero_slider .mt_hero_slide_single {
+        min-height: auto;
+    }
     .mt_text_shape {
         left: 52%;
     }
