@@ -197,17 +197,17 @@ a {
 }
 
 .mt_hero_slider .number_1 .mt_hero_images {
-    transform: rotate(2deg);
+    transform: rotate(4deg);
 }
 .mt_hero_slider .number_1 .mt_hero_images img {
-    transform: rotate(-2deg);
+    transform: rotate(-4deg);
 }
 
 .mt_hero_slider .number_2 .mt_hero_images {
-    transform: rotate(-20deg);
+    transform: rotate(-22deg);
 }
 .mt_hero_slider .number_2 .mt_hero_images img {
-    transform: rotate(20deg);
+    transform: rotate(22deg);
 }
 
 .mt_hero_right .leaf-1 {
@@ -422,11 +422,11 @@ a {
     30% {
         transform: rotate(-2deg);
     }
-    90% {
+    80% {
         transform: rotate(-2deg);
     }
     100% {
-        transform: rotate(2deg);
+        transform: rotate(4deg);
     }
 }
 
@@ -435,13 +435,13 @@ a {
         transform: rotate(20deg);
     }
     30% {
-        transform: rotate(-2deg);
+        transform: rotate(2deg);
     }
-    90% {
-        transform: rotate(-2deg);
+    80% {
+        transform: rotate(2deg);
     }
     100% {
-        transform: rotate(-2deg);
+        transform: rotate(-4deg);
     }
 }
 
@@ -452,11 +452,11 @@ a {
     30% {
         transform: rotate(-18deg);
     }
-    90% {
+    80% {
         transform: rotate(-18deg);
     }
     100% {
-        transform: rotate(-20deg);
+        transform: rotate(-22deg);
     }
 }
 
@@ -467,11 +467,11 @@ a {
     30% {
         transform: rotate(18deg);
     }
-    90% {
+    80% {
         transform: rotate(18deg);
     }
     100% {
-        transform: rotate(20deg);
+        transform: rotate(22deg);
     }
 }
 
@@ -520,10 +520,6 @@ a {
         top: 20%;
     }
 }
-
-
-
-
 
 @keyframes rotate {
     0% {

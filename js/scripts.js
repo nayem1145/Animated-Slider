@@ -23,13 +23,18 @@
         fade: true,
         dots: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 1800, 
+                settings: {
+                    dots: false,
+                }
+            }
+        ]
     });
 
 
-    $('.mt_hero_slider').on('afterChange', function(){
-        $(".mt_hero_slider .animation_delay").removeClass("animation_delay");
-        $(".mt_hero_slider .slick-active").addClass("animation_delay");
-    });
+
 
 
 
