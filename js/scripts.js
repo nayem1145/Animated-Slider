@@ -1,10 +1,4 @@
 (function($){
-
-    /*
-        1. Data Background Function
-    */
-
-
     //1. Data Background Set
     $('[data-background]').each(function () {
         $(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
