@@ -21,6 +21,7 @@
     $(".mt_hero_slider").slick({
         slidesToShow: 1,
         fade: true,
+        speed: 500,
         dots: true,
         arrows: false,
         responsive: [
