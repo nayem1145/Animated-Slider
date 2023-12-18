@@ -87,10 +87,10 @@ a {
 }
 
 .mt_hero_slider .number_0 {
-    background-size: calc(100% + 20px) 850px;
+    background-size: calc(100% + 20px) 840px;
 }
 .mt_hero_slider .number_1 {
-    background-size: calc(100% + 20px) 850px;
+    background-size: calc(100% + 20px) 840px;
 }
 .mt_hero_slider .number_2 {
     background-size: calc(100% + 150px) 850px;
@@ -300,9 +300,6 @@ a {
 /******************** slider animations *****************/
 
 /****** slider background animation ********/
-.mt_hero_slider .slick-active .number_0 {
-    
-}
 .mt_hero_slider .slick-active .number_1 {
     animation: 2s background_animation_1 linear;
 }
@@ -327,7 +324,7 @@ a {
     animation: 2s mask_animation_0 linear;
 }
 .mt_hero_slider .slick-active .number_1 .mt_hero_images {
-    animation: 0.6s mask_animation_1 linear;
+    animation: 2s mask_animation_1 linear;
 }
 .mt_hero_slider .slick-active .number_2 .mt_hero_images {
     animation: 2s mask_animation_2 linear;
@@ -337,7 +334,7 @@ a {
     animation: 2s mask_animation_reverse_0 linear;
 }
 .mt_hero_slider .slick-active .number_1 .mt_hero_images img {
-    animation: 0.6s mask_animation_reverse_1 linear;
+    animation: 2s mask_animation_reverse_1 linear;
 }
 .mt_hero_slider .slick-active .number_2 .mt_hero_images img {
     animation: 2s mask_animation_reverse_2 linear;
@@ -517,6 +514,12 @@ a {
     0% {
         transform: rotate(-8deg);
     }
+    30% {
+        transform: rotate(-8deg);
+    }
+    70% {
+        transform: rotate(-8deg);
+    }
     100% {
         transform: rotate(4deg);
     }
@@ -535,6 +538,12 @@ a {
 }
 @keyframes mask_animation_reverse_1 {
     0% {
+        transform: rotate(8deg);
+    }
+    30% {
+        transform: rotate(8deg);
+    }
+    70% {
         transform: rotate(8deg);
     }
     100% {
@@ -582,7 +591,7 @@ a {
         background-size: calc(100% + 150px) 850px;
     }
     100% {
-        background-size: calc(100% + 20px) 850px;
+        background-size: calc(100% + 20px) 840px;
     }
 }
 @keyframes background_animation_1 {
@@ -593,15 +602,15 @@ a {
         background-size: calc(100% + 150px) 850px;
     }
     100% {
-        background-size: calc(100% + 20px) 850px;
+        background-size: calc(100% + 20px) 840px;
     }
 }
 @keyframes background_animation_2 {
     0% {
-        background-size: calc(100% + 20px) 850px;
+        background-size: calc(100% + 20px) 840px;
     }
     75% {
-        background-size: calc(100% + 20px) 850px;
+        background-size: calc(100% + 20px) 840px;
     }
     100% {
         background-size: calc(100% + 150px) 850px;
